@@ -1,0 +1,110 @@
+body{
+	margin:0;
+	width:100vw;
+	height:100vh;
+	background:linear-gradient(#f0f,	 #50f);
+	overflow:auto;
+	overflow-x:hidden;
+	font-family:'Fira Code';
+}
+.evs{
+	position:absolute;
+	width:60vw;
+	height:80vh;
+	left:3vw;
+	overflow: auto;
+}
+table{
+	margin-left:15%;
+	width:70%;
+	border-collapse: seperate;
+	font-size:15px;
+	color:darkblue;
+	border-spacing:0 3vh;
+	padding-right:3vw;
+}
+tr{
+	background:#fff;
+	height:8vh;
+}
+tr:nth-child(1){
+	background:#f05;
+	color:#fff;
+	border:none;
+}
+tr:nth-child(1):hover td{
+	background:#f05;
+}
+th{
+	padding:15px;
+}
+td{ text-align:center; padding:10px;}
+a{text-decoration: none ;}
+form{
+	position:absolute;
+	width:30vw;
+	top:10vh;
+	left:66vw;
+	overflow: auto;
+	text-align:center;
+	border-radius:10px;
+	background:#fff;
+}
+form div{
+	background:#05f;
+	padding:15px;
+	color:#fff;
+}
+input{
+	height:7vh;
+	border-radius:5px;
+	border:1px solid #aaa;
+	margin:10px;
+	width:90%;
+	font-size:20px;
+	color:#555;
+	box-sizing:border-box;
+	padding-left:10px;
+}
+input[type=submit]{
+	background:#05f;
+	color:#fff;
+}
+.del{
+	position:fixed;
+	width:30vw;
+	right:20px;
+	bottom:20px;
+	color:#fff;
+}
+
+tr:before{
+	display:block;
+	content:'';
+	width:0;
+	height:0;
+	border-top:5.65vh solid transparent;
+	border-left:5.65vh solid transparent;
+	border-right:5.65vh solid #fff;
+	border-bottom:5.65vh solid #fff;
+	margin-left: -10.98vh;
+}
+tr:after{
+	display:block;
+	content:'';
+	width:0;
+	height:0;
+	border-bottom:5.65vh solid transparent;
+	border-right:5.65vh solid transparent;
+	border-left:5.65vh solid #fff;
+	border-top:5.65vh solid #fff;
+	margin-right: -10.98vh;
+}
+tr:nth-child(1):before{
+	border-right:5.65vh solid #f05;
+	border-bottom:5.65vh solid #f05;
+}
+tr:nth-child(1):after{
+	border-left:5.65vh solid #f05;
+	border-top:5.65vh solid #f05;
+}
